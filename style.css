@@ -1,0 +1,161 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: sans-serif;
+}
+
+html { 
+    background: url(background.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  body{
+      height: 100vh;
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-top : 7px;
+}
+
+.logo-container{
+    width: 25%;
+}
+.logo{
+    width: 40%;
+    height: auto;
+    margin-left : 15px;
+}
+
+.navbar-links{
+
+    background-color: white;
+    padding: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links li {
+    font-size: 1.5rem;
+    padding : 20px 40px;
+    margin-right : 30px;
+    list-style: none;
+    background-color: white;
+    border-radius: 55px;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.middle-box-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color : rgba(216, 216, 216, 0.54);
+    text-align: center;
+}
+
+.btn {
+    height: 70px;
+    width: 250px;
+    font-size: 1.4rem;
+    color:white;
+    background-color: #8399B3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+i{
+    margin: 16px;
+    font-family: "FontAwesome";
+    font-style: normal;
+}
+
+.social{
+    margin : 35px;
+    color: white;
+    
+}
+
+.formulaLogo{
+    width: 75%;
+    height: auto;
+    margin-bottom : 40px;
+}
+
+.button-container {
+    margin-bottom : 45px;
+}
+
+.toggle-button{
+    position : absolute;
+    top : 0.75rem;
+    right : 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width :100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width : 768px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links {
+        /* display: none; */
+        
+    }
+
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        margin-left:0;
+    }
+
+    .navbar{
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    
+}
+
